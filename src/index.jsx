@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import { BrowserRouter, Route, Routes, } from 'react-router-dom';
 import Home from './pages/home/Index';
-import Products_Heaters from '.pages/products-aquecedores/Index';
+import Products_Heaters from './pages/products-aquecedores/Index';
 import Products_Kits from './pages/products-kits/Index';
 import Products_Accessories from './pages/products-acessórios/Index';
 import Products_Pressurizers from './pages/products-pressurizadores/Index';
