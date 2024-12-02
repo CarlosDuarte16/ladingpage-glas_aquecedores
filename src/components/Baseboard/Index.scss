@@ -1,0 +1,22 @@
+.comp-baseboard {
+  display: flex;
+  background-color: #0B64AF;
+  gap: 10px;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  justify-content: center;
+  margin-top: -50px;
+
+  img {
+    width: auto;
+    height: 1em;
+  }
+
+  p {
+    font-family: "K2D";
+    font-size: 1em;
+    color: #fff;
+
+  }
+}
