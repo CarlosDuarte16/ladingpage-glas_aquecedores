@@ -1,22 +1,106 @@
 .comp-baseboard {
   display: flex;
-  background-color: #0B64AF;
-  gap: 10px;
-  align-items: center;
-  height: 30px;
-  width: 100%;
-  justify-content: center;
-  margin-top: -50px;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0%;
 
-  img {
-    width: auto;
-    height: 1em;
+  .first-baseboard {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to bottom, #fff, #eef7ff,#eef7ff, #eef7ff, #eef7ff, #eef7ff);
+    width: 1388px;
+    height: 80vh;
+    margin: 0%;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+
+    .text { 
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      h4{
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 1.2em;
+        color: #0B64AF;
+      }
+      h1{
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 2.6em;
+        color: #020043;
+      }
+      hr{
+        width: 450px;
+        margin-right: 50px;
+      }
+      .whatsapp {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          width: auto;
+          height: 1.5em;
+        }
+
+        .p {
+          text-decoration: none;
+          font-size: 1em;
+          color: #0B64AF;
+          font-family: "K2D";
+        }
+      }
+
+      .email {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          width: auto;
+          height: 1.5em;
+        }
+
+        .p {
+          text-decoration: none;
+          font-size: 1.1em;
+          color: #0B64AF;
+          font-family: "K2D";
+        }
+      }
+    }
+    .logo{
+      width: auto;
+      height: 20em;
+      cursor: pointer;
+    }
   }
 
-  p {
-    font-family: "K2D";
-    font-size: 1em;
-    color: #fff;
+  .finish-baseboard {
+    display: flex;
+    background-color: #0B64AF;
+    gap: 10px;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+    margin-top: -50px;
 
+    img {
+      width: auto;
+      height: 1em;
+    }
+
+    p {
+      font-family: "K2D";
+      font-size: 1em;
+      color: #fff;
+
+    }
   }
 }

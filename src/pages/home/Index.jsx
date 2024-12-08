@@ -8,10 +8,10 @@ import Baseboard from '../../components/Baseboard/Index';
 export default function Home() {
   return (
     <div className="page-home">
-      <div className="head">
+      <div className="head" id='head'>
         <Head />
       </div>
-      <div
+      <div 
         className="banner1"
         style={{
           backgroundImage: 'url("/assets/image/Banner1.png")',
@@ -22,7 +22,7 @@ export default function Home() {
         }}>
         <button>Fale Conosco</button>
       </div>
-      <div className="faixa-services">
+      <div className="faixa-services" id='faixa-services'>
         <h1>Conheça nossos serviços</h1>
         <div className="cards1">
           <CardServices
@@ -95,7 +95,7 @@ export default function Home() {
           }}>
           <button>Ver Produtos</button>
         </div>
-        <div className="faixa-marcas">
+        <div className="faixa-marcas" id='faixa-marcas'>
           <h1>Trabalhamos com diversas marcas!</h1>
           <div className="marcas1">
             <img src="/assets/image/Rinnai.png" alt="" />
@@ -110,17 +110,9 @@ export default function Home() {
             <img src="/assets/image/Komeco.png" alt="" />
           </div>
         </div>
-        <div
-          className="banner1"
-          style={{
-            backgroundImage: 'url("/assets/image/Banner3.png")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            height: '80vh',
-            width: '100%',
-          }}>
+        <div className='faixa-baseboard' id='faixa-baseboard'>
+          <Baseboard />
         </div>
-          <Baseboard/>
       </div>
     </div>
   );
