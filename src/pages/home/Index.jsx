@@ -6,6 +6,12 @@ import CardServices from '../../components/Card_services/Index';
 import Baseboard from '../../components/Baseboard/Index';
 
 export default function Home() {
+  const navigate = useNavigate()
+
+  function verProdutos(){
+    navigate('/aquecedores')
+  }
+ 
   return (
     <div className="page-home">
       <div className="head" id='head'>
@@ -21,7 +27,7 @@ export default function Home() {
           width: '100%',
         }}>
         <button>Fale Conosco</button>
-      </div>
+      </div> 
       <div className="faixa-services" id='faixa-services'>
         <h1>Conheça nossos serviços</h1>
         <div className="cards1">
@@ -93,7 +99,7 @@ export default function Home() {
             height: '90vh',
             width: '100%',
           }}>
-          <button>Ver Produtos</button>
+          <button onClick={verProdutos}>Ver Produtos</button>
         </div>
         <div className="faixa-marcas" id='faixa-marcas'>
           <h1>Trabalhamos com diversas marcas!</h1>

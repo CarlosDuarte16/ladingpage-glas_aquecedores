@@ -1,0 +1,35 @@
+.comp-searchbar {
+  display: flex;
+  gap: 50px;
+  background-color: #0B64AF;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+
+  .link {
+    text-decoration: none;
+    color: #fff;
+    font-family: "K2D";
+    font-weight: 300;
+    letter-spacing: 2px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color:#fff;
+      transition: width 0.2s ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  
+}

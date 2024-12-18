@@ -1,0 +1,42 @@
+.comp-card_services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 304px;
+  border-radius: 10px;
+  transition: 0.3s;
+
+  img {
+    width: 19em;
+    height: 10em;
+  }
+
+  h2 {
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 2px;
+    color: #020043;
+    margin-top: 5px;
+    font-size: 1.2em;
+  }
+
+  p {
+    width: 300px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+  }
+
+  button {
+    margin-top: 20px;
+    margin-right: 8%;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    box-shadow: 0px 0px 10px #0B64AF;
+  }
+
+}
