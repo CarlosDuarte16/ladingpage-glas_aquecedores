@@ -7,7 +7,8 @@
   backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
-
+  z-index: 1;
+  
   img{
     width: auto;
     height: 5em;

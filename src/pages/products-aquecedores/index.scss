@@ -21,15 +21,19 @@
     display:flex;
     flex-direction: column;
     margin-top: 80px;
-    margin-left: 10%;
 
     h2{
       font-family: 'K2D';
       color: #0B64AF;
       font-weight: 300;
+      margin-left: 10%;
     }
     .Cards{
-      
+      margin: 0px;
+      flex-wrap: wrap;
+      display: flex;
+      height: auto;
+      justify-content: space-evenly;      
     }
   }
 

@@ -24,7 +24,7 @@ export default function CardProducts({
         </div>
         <div className="content">
           <div className="informations">
-            <h3>{title1} <span>{title2}</span></h3>
+            <h3>{title1}</h3>
             <p>Ideal para:</p>
             <div className="icons">
               <div className="icon">
@@ -35,25 +35,18 @@ export default function CardProducts({
                 <img src={icon2} alt="icon2" />
                 <span>{text2}</span>
               </div>
-              <div className="icon">
-                <img src={icon3} alt="icon3" />
-                <span>{text3}</span>
-              </div>
             </div>
             <p>Modelos:</p>
             <div className="models">
               <span>{modelo1}</span>
               <span>{modelo2}</span>
               <span>{modelo3}</span>
-              <span>{modelo4}</span>
             </div>
           </div>
         </div>
       </div>
       <div className="basic-informations">
-        <h4>{title1}</h4>
-        <p>A partir de</p>
-        <h3>{price}</h3>
+        <h4>{title2}</h4>
       </div>
     </div>
   );

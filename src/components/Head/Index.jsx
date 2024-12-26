@@ -19,7 +19,7 @@ export default function Head() {
     <div className="comp-head">
       <img onClick={logo} src="/assets/image/logo-sem_fundo.png" alt="logo" />
       <div className="options">
-        <HashLink scroll={scrool} to='#head' className='link' >Home</HashLink>
+        <HashLink scroll={scrool} to='/' className='link' >Home</HashLink>
         <HashLink scroll={scrool} to='#faixa-services' className='link'>Serviços</HashLink>
         <HashLink scroll={scrool} to='#faixa-marcas' className='link'>Marcas</HashLink>
         <HashLink scroll={scrool} to='/aquecedores' className='link'>Produtos</HashLink>
