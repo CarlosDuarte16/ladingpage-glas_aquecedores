@@ -26,7 +26,7 @@ export default function Products_Heaters() {
       <div className="SearchBar">
         <SearchBar />
       </div>
-      <div className="products">
+      <div className="products"> 
         <h2>Aquecedores</h2>
         <div className="Cards">
           <div className="card">

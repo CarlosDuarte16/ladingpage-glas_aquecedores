@@ -1,0 +1,43 @@
+.page-kits {
+  display: flex;
+  flex-direction: column;
+
+  .banner-products {
+    margin-top: 80px;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2.2em;
+    color: #020043;
+  }
+
+  .SearchBar {
+    margin-top: 40px;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+
+    h2 {
+      font-family: 'K2D';
+      color: #0B64AF;
+      font-weight: 300;
+      margin-left: 10%;
+    }
+
+    .Cards {
+      margin: 0px;
+      flex-wrap: wrap;
+      display: flex;
+      height: auto;
+      justify-content: space-evenly;
+    }
+  }
+
+}

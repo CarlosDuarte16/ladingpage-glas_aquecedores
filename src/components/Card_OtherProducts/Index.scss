@@ -1,12 +1,13 @@
-.comp-card_products {
-  width: 280px;
+.comp-card_OtherProducts {
+  padding: 15px;
+  width: 290px;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
   margin-top: 80px;
   font-family: 'Poppins', sans-serif;
   box-shadow: 0px 0px 10px #ececec;
-
+  
   .pop-up {
     position: relative;
     width: 100%;
@@ -14,10 +15,10 @@
 
     .image-box {
       width: auto;
-      height: 25em;
+      height: 15em;
       overflow: hidden;
       border-radius: inherit;
-
+      margin-bottom: 15px;
       img {
         width: auto;
         height: 100%;
@@ -27,45 +28,6 @@
       }
     }
 
-    &:hover img {
-      filter: grayscale(1) brightness(0.4);
-    }
-
-    &:hover::after {
-      content: "";
-      position: absolute;
-      inset: 5px;
-
-      border-radius: inherit;
-      opacity: 1;
-      transition: 0.4s ease-in-out;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      opacity: 0;
-      transition: 0.4s ease-in-out;
-    }
-
-    .content {
-      position: absolute;
-      top: 48%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 70%;
-      max-height: calc(100% - 20px);
-      overflow: hidden;
-      padding: 5px;
-      box-sizing: border-box;
-      text-align: center;
-      color: white;
-      z-index: 1;
-      opacity: 0;
-      transition: 0.5s ease-in-out;
-    }
   }
 
   .basic-informations {
@@ -74,11 +36,12 @@
     margin-top: -5px;
     margin-bottom: 10px;
     gap: 5px;
-
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    margin-left: 10px;
     h4 {
       display: flex;
-      justify-content: center;
-      text-align: center;
       font-size: 1.2em;
       font-family: "K2D";
       color: #020043;
