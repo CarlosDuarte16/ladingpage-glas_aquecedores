@@ -1,4 +1,4 @@
-.comp-banner_products{
+.comp-banner_home {
   display: flex;
   align-items: center;
   position: relative;
@@ -13,23 +13,17 @@
 
   .banner__content {
     flex: 1;
-    padding: 4rem;
+    padding: 2rem;
 
-    h3{
-      color: #0b64af;
-      font-family: "K2D";
-      font-size: 1.3em;
-      font-weight: 400;
-    }
+    
 
     h1 {
-      font-size: 2.7rem;
+      font-size: 2.5rem;
       font-weight: bold;
       margin-bottom: 1rem;
       line-height: 1.2;
       width: 50%;
       font-family: "Inter";
-      color:#020043;
     }
 
 
@@ -39,8 +33,6 @@
       line-height: 1.6;
       width: 70%;
       font-family: "K2D";
-      color: #000;
-      width: 60%;
     }
 
     button {

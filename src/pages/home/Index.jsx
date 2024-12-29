@@ -4,30 +4,24 @@ import { useState } from 'react';
 import Head from '../../components/Head/Index';
 import CardServices from '../../components/Card_services/Index';
 import Baseboard from '../../components/Baseboard/Index';
+import BannerHome from '../../components/Banner_home/Index';
+import BannerProducts from '../../components/Banner_products/Index';
 
 export default function Home() {
   const navigate = useNavigate()
 
-  function verProdutos(){
+  function verProdutos() {
     navigate('/aquecedores')
   }
- 
+
   return (
     <div className="page-home">
       <div className="head" id='head'>
         <Head />
       </div>
-      <div 
-        className="banner1"
-        style={{
-          backgroundImage: 'url("/assets/image/Banner1.png")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: '90vh',
-          width: '100%',
-        }}>
-        <button>Fale Conosco</button>
-      </div> 
+      <div className="banner1">
+        <BannerHome />
+      </div>
       <div className="faixa-services" id='faixa-services'>
         <h1>Conheça nossos serviços</h1>
         <div className="cards1">
@@ -90,16 +84,8 @@ export default function Home() {
             button="Orçamento"
           />
         </div>
-        <div
-          className="banner1"
-          style={{
-            backgroundImage: 'url("/assets/image/Banner2.png")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            height: '90vh',
-            width: '100%',
-          }}>
-          <button onClick={verProdutos}>Ver Produtos</button>
+        <div className="banner1">
+          <BannerProducts/>
         </div>
         <div className="faixa-marcas" id='faixa-marcas'>
           <h1>Trabalhamos com diversas marcas!</h1>
