@@ -1,15 +1,68 @@
-.comp-head{
+.comp-head {
   top: 0;
   display: flex;
-  align-items: center;  
+  align-items: center;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
   z-index: 1;
-  
-  img{
+
+  .icon-menu-mobile {
+    display: none;
+    cursor: pointer;
+  }
+
+  .menu-mobile {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    min-width: 50%;
+    // width: auto;
+    height: 100dvh !important;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(1px);
+    transition: all 0.3s;
+
+    .icon-close-menu {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      padding: 2px;
+      border-radius: 100%;
+      color: #020043;
+      transition: all 0.43s;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .list-items {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0;
+      height: 100%;
+
+      .link {
+        font-size: 1.1em;
+        text-decoration: none;
+        font-family: "K2D";
+        color: #020043;
+      }
+    }
+  }
+
+  .menu-mobile.active {
+    right: 0;
+  }
+
+  img {
     width: auto;
     height: 5em;
     margin: 0px 5%;
@@ -19,21 +72,21 @@
     display: flex;
     gap: 50px;
     margin-right: 4%;
-  
+
     .link {
       font-size: 1.1em;
-      text-decoration: none; 
+      text-decoration: none;
       font-family: "K2D";
       color: #020043;
-      position: relative; 
-      transition: color 0.3s ease-in-out; 
-  
+      position: relative;
+      transition: color 0.3s ease-in-out;
+
       &:hover {
         color: rgb(182, 0, 0);
       }
-  
+
       &::after {
-        content: ''; 
+        content: "";
         position: absolute;
         bottom: 0;
         left: 0;
@@ -42,10 +95,19 @@
         background-color: rgb(182, 0, 0);
         transition: width 0.2s ease-in-out;
       }
-  
+
       &:hover::after {
         width: 100%;
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .options {
+      display: none;
+    }
+    .icon-menu-mobile {
+      display: block;
     }
   }
 }
