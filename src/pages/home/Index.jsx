@@ -84,7 +84,7 @@ export default function Home() {
             button="Orçamento"
           />
         </div>
-        <div className="banner1">
+        <div className="banner2">
           <BannerProducts/>
         </div>
         <div className="faixa-marcas" id='faixa-marcas'>
