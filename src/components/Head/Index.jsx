@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./Index.scss";
 import { Link, useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+
 import { Menu, X } from "lucide-react";
 
 export default function Head() {
