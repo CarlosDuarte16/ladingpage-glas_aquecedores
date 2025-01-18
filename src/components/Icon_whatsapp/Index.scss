@@ -1,0 +1,18 @@
+.comp-icon_whatsapp {
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+
+  img {
+    width: auto;
+    height: 3em;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  &:hover img {
+    transform: scale(1.2);
+    opacity: 0.9;
+  }
+}

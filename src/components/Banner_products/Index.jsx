@@ -1,6 +1,15 @@
-import './Index.scss';  
+import './Index.scss';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export default function BannerProducts() {
+export default function BannerProducts({ showButton }) {
+  const { button, setButton } = useState();
+  const navigate = useNavigate();
+
+  function directProducts() {
+    navigate('/aquecedores')
+  }
+
   return (
     <div
       className="comp-banner_products"
@@ -13,10 +22,10 @@ export default function BannerProducts() {
         <h1>Venda de Aquecedores</h1>
         <p>
           Venda de aquecedores para proporcionar conforto e economia,
-          ideais para uso residencial e comercial. Produtos de alta qualidade 
-          que garantem água quente e bem-estar todos os dias. 
+          ideais para uso residencial e comercial. Produtos de alta qualidade
+          que garantem água quente e bem-estar todos os dias.
         </p>
-        <button>Ver produtos</button>
+        { showButton && <button onClick={directProducts}>Ver produtos</button>}
       </div>
     </div>
   );

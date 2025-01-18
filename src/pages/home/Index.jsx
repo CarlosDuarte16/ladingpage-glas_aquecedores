@@ -1,11 +1,12 @@
 import './index.scss';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useState } from 'react';
 import Head from '../../components/Head/Index';
 import CardServices from '../../components/Card_services/Index';
 import Baseboard from '../../components/Baseboard/Index';
 import BannerHome from '../../components/Banner_home/Index';
 import BannerProducts from '../../components/Banner_products/Index';
+import IconWhatsapp from '../../components/Icon_whatsapp/Index';
 
 export default function Home() {
   const navigate = useNavigate()
@@ -16,6 +17,7 @@ export default function Home() {
 
   return (
     <div className="page-home">
+      <IconWhatsapp />
       <div className="head" id='head'>
         <Head />
       </div>
@@ -85,27 +87,30 @@ export default function Home() {
           />
         </div>
         <div className="banner2">
-          <BannerProducts/>
+          <BannerProducts showButton={true} />
         </div>
         <div className="faixa-marcas" id='faixa-marcas'>
           <h1>Trabalhamos com diversas marcas!</h1>
           <div className="marcas1">
             <img src="/assets/image/Rinnai.png" alt="" />
-            <img src="/assets/image/Harman.png" alt="" />
+
+            <img src="/assets/image/Komeco.png" alt="" />
             <img src="/assets/image/Bosch.png" alt="" />
             <img src="/assets/image/Lorenzetti.png" alt="" />
           </div>
           <div className="marcas2">
+            <img src="/assets/image/Harman.png" alt="" />
             <img src="/assets/image/Heliotek.png" alt="" />
             <img src="/assets/image/Sakura.png" alt="" />
             <img src="/assets/image/Rheem.png" alt="" />
-            <img src="/assets/image/Komeco.png" alt="" />
+
           </div>
         </div>
         <div className='faixa-baseboard' id='faixa-baseboard'>
           <Baseboard />
         </div>
       </div>
+
     </div>
   );
 }

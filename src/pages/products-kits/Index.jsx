@@ -5,22 +5,17 @@ import Head from '../../components/Head/Index';
 import Baseboard from '../../components/Baseboard/Index';
 import SearchBar from '../../components/SearchBar/Index';
 import CardOtherProducts from '../../components/Card_OtherProducts/Index';
+import BannerProducts from '../../components/Banner_products/Index';
+import IconWhatsapp from '../../components/Icon_whatsapp/Index';
+
 
 export default function Products_Kits() {
   return (
     <div className="page-kits">
+      <IconWhatsapp/>
       <Head />
-      <div className="banner-products">
-        <div
-          className="banner1"
-          style={{
-            backgroundImage: 'url("/assets/image/Banner2.png")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            height: '90vh',
-            width: '100%',
-          }}>
-        </div>
+      <div className="banner2">
+        <BannerProducts showButton={false} />
       </div>
       <h1>Nossos Produtos</h1>
       <div className="SearchBar">
@@ -32,24 +27,24 @@ export default function Products_Kits() {
           <div className="card">
             <CardOtherProducts
               image="assets/image/Kit dourado.png"
-              title2="Kit Gás Encanado para Fogão ou Cooktop - Dourado"  
+              title2="Kit Gás Encanado para Fogão ou Cooktop - Dourado"
             />
           </div>
           <div className="card">
             <CardOtherProducts
               image="assets/image/Kit prata.png"
-              title2="Kit Gás Encanado para Fogão ou Cooktop - Prata"  
+              title2="Kit Gás Encanado para Fogão ou Cooktop - Prata"
             />
           </div>
           <div className="card">
             <CardOtherProducts
               image="assets/image/Kit instalação.png"
-              title2="Kit Instalação Aquecedor - completo"  
+              title2="Kit Instalação Aquecedor - completo"
             />
           </div>
         </div>
       </div>
-      <Baseboard/>
+      <Baseboard />
     </div>
   );
 }

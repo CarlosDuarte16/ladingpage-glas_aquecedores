@@ -5,28 +5,23 @@ import Head from '../../components/Head/Index';
 import Baseboard from '../../components/Baseboard/Index';
 import SearchBar from '../../components/SearchBar/Index';
 import CardProducts from '../../components/Card_Procucts/Index';
+import BannerProducts from '../../components/Banner_products/Index';
+import IconWhatsapp from '../../components/Icon_whatsapp/Index';
+
 
 export default function Products_Heaters() {
   return (
     <div className="page-heaters">
+      <IconWhatsapp />
       <Head />
-      <div className="banner-products">
-        <div
-          className="banner1"
-          style={{
-            backgroundImage: 'url("/assets/image/Banner2.png")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            height: '90vh',
-            width: '100%',
-          }}>
-        </div>
+      <div className="banner2">
+        <BannerProducts showButton={false} />
       </div>
       <h1>Nossos Produtos</h1>
       <div className="SearchBar">
         <SearchBar />
       </div>
-      <div className="products"> 
+      <div className="products">
         <h2>Aquecedores</h2>
         <div className="Cards">
           <div className="card">
@@ -210,7 +205,7 @@ export default function Products_Heaters() {
               modelo3="-----"
               title2="Aquecedor a Gás Rinnai Preto"
             />
-          </div>  
+          </div>
           <div className="card">
             <CardProducts
               image="assets/image/rinnai_bk_3.png"
@@ -253,10 +248,10 @@ export default function Products_Heaters() {
               title2="Aquecedor a Gás Rinnai Branco"
             />
           </div>
-          
+
         </div>
       </div>
-      <Baseboard/>
+      <Baseboard />
     </div>
   );
 }
